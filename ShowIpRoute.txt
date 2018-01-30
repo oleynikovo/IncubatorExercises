@@ -1,0 +1,50 @@
+Router# show ip route
+
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+Gateway of last resort is 10.119.254.240 to network 10.140.0.0
+
+O*E2 10.110.0.0 [160/5] via 10.119.254.6, 0:01:00, Ethernet2
+
+D 10.67.10.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+O E2 10.68.132.0 [160/5] via 10.119.254.6, 0:00:59, Ethernet2
+
+O E2 10.130.0.0 [160/5] via 10.119.254.6, 0:00:59, Ethernet2
+
+E 10.128.0.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+E 10.129.0.0 [200/129] via 10.119.254.240, 0:02:22, Ethernet2
+
+E 10.65.129.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+E 10.10.0.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+E 10.75.139.0 [200/129] via 10.119.254.240, 0:02:23, Ethernet2
+
+E 10.16.208.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+E 10.84.148.0 [200/129] via 10.119.254.240, 0:02:23, Ethernet2
+
+E 10.31.223.0 [200/128] via 10.119.254.244, 0:02:22, Ethernet2
+
+E 10.44.236.0 [200/129] via 10.119.254.240, 0:02:23, Ethernet2
+
+E 10.141.0.0 [200/129] via 10.119.254.240, 0:02:22, Ethernet2
+
+E 10.140.0.0 [200/129] via 10.119.254.240, 0:02:23, Ethernet2
+
+C 10.69.232.32 255.255.255.240 is directly connected, Ethernet0
+
+i L2 10.89.67.0 [115/20] via 10.89.64.240, 0:00:12, Ethernet0
+
+i L2 10.89.66.0 [115/20] via 10.89.64.240, 0:00:12, Ethernet0
+
+H 172.16.99.0 [250/1] via 10.1.1.99, 00:11:43, Tunnel0
