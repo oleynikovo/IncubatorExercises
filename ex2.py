@@ -6,7 +6,6 @@ import re
 f = open('commands.txt', 'r')
 trunking_configs = f.read()
 f.close()
-#trunking_configs = trunking_configs_raw.split('\n')
 
 """ 
 build a regular expression to match 
